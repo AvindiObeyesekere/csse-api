@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -12,9 +12,8 @@ import java.util.List;
 @NoArgsConstructor
 public class ScheduleRequestDTO {
     private String timeOfSchedule; // e.g., "10:30 AM"
-    private Date dateOfSchedule; // To be chosen manually from the frontend
+    private LocalDateTime dateOfSchedule; // To be chosen manually from the frontend
     private int noOfTrucksNeeded;
     private String nameOfWMA; // Waste Management Authority
     private List<String> citiesIncluded; // List of city names
 }
-

@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime; // Use LocalDateTime for better date handling
 import java.util.List;
 
 @Data
@@ -13,7 +13,7 @@ import java.util.List;
 public class ScheduleResponseDTO {
     private long scheduleId; // Primary key
     private String timeOfSchedule;
-    private Date dateOfSchedule;
+    private LocalDateTime dateOfSchedule; // Changed to LocalDateTime
     private int noOfTrucksNeeded;
     private String nameOfWMA;
     private List<String> citiesIncluded;

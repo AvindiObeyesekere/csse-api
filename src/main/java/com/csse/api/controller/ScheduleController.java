@@ -41,4 +41,5 @@ public class ScheduleController {
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
+
 }

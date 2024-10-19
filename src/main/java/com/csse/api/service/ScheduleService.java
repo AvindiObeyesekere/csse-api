@@ -46,4 +46,3 @@ public class ScheduleService {
         repository.deleteById(id);
     }
 }
-
